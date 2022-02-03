@@ -30,7 +30,7 @@ public class AppUserServiceImpl implements AppUserService{
     }
 
     @Override
-    public void AddRoleToUser(String username, String roleName) {
+    public void addRoleToUser(String username, String roleName) {
         // Validate UserName and RoleName
         log.info("Adding role {} to user {}", roleName, username);
         AppUser user = appUserRepo.findByUsername(username);

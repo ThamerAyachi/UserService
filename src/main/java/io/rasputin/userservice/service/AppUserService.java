@@ -8,7 +8,7 @@ import java.util.List;
 public interface AppUserService {
     AppUser saveUser(AppUser appUser);
     Role saveRole(Role role);
-    void AddRoleToUser(String username, String roleName);
+    void addRoleToUser(String username, String roleName);
     AppUser getUser(String username);
     List<AppUser> getUsers();
 }
